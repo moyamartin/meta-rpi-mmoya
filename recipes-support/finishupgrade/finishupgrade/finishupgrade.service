@@ -1,0 +1,11 @@
+[Unit]
+Description=Finish upgrade service to set upgrade_available 0 on u-boot env var
+
+[Service]
+Type=oneshot
+ExecStart=@LIBDIR@/finishupgrade/finishupgrade
+RemainAfterExit=true
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target

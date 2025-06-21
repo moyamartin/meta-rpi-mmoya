@@ -23,6 +23,8 @@ SRC_URI = "git://source.denx.de/u-boot/u-boot.git;protocol=https;branch=master \
            file://CVE-2024-57258-2.patch \
            file://CVE-2024-57258-3.patch \
            file://CVE-2024-57259.patch \
+           file://0001-add-boot-counter-to-rpi-5.patch \
+           file://0002-set-custom-env-variables-to-rpi.env.patch \
 "
 
 S = "${WORKDIR}/git"
